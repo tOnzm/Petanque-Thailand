@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+    <!-- JS -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+    <title>สมาคมเปตองแห่งประเทศไทย</title>
+</head>
+
+<body>
+    <nav class="navbar  bg-white  navbar-expand-md fixed-top navbar-top">
+        <div class="container">
+            <div class="col-3 pl-md-0 text-left">
+                <a href="#">
+                    <img src="./img/navlogo.png" height="60" alt="image">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse-2"
+                aria-controls="navbarNav7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-collapse-2 justify-content-center col-md-6" id="navbarNav7">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">เกี่ยวกับเรา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">การแข่งขัน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">นักกีฬา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ติดต่อเรา</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse navbar-collapse-2">
+                <ul class="navbar-nav ms-auto justify-content-end">
+
+                    <li class="nav-item">
+                        <a class="btn btn-outline-dark ms-md-3" href="#">สมัครสมาชิกชมรม</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- สไลด์ -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner" role="listbox" style="width: 100%; height: 100%;">
+            <div class="carousel-item active">
+                <img src="./img/carousel/01.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>การอบรมผู้ฝึกสอนเปตอง</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carousel/03.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>สมาคมกีฬาเปตองแห่งประเทศไทย</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/carousel/02.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>First slide label</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <!-- ภาพสไลด์ -->
+    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/carousel/01.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>1920px*800px</h5>
+                    <p>ภาพถ่ายรวมทีมชาติไทยชาย-หญิง</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carousel/02.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>1920px*800px</h5>
+                    <p>ภาพถ่ายทีมชาติไทย-หญิง</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carousel/03.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>1920px*800px</h5>
+                    <p>ภาพถ่ายทีมชาติไทย-ชาย</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+    <!--  ข่าวสาร -->
+
+    <div id="cards_landscape_wrap-2">
+        <div class="container">
+            <div class="row">
+                <h4 class="newspetanque">ข่าวสาร</h4>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6">
+                    <a href="">
+                        <div class="card-flyer">
+                            <div class="text-box text-box-main">
+                                <div class="image-box-main">
+                                    <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg"
+                                        alt="" />
+                                </div>
+                                <div class="text-container-main">
+                                    <h6>Watch the Highlights</h6>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="https://cdn.pixabay.com/photo/2018/04/09/19/55/low-poly-3305284_960_720.jpg"
+                                        alt="" />
+                                </div>
+                                <div class="text-container">
+                                    <h6>Title 02</h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="https://cdn.pixabay.com/photo/2018/04/06/13/46/poly-3295856_960_720.png"
+                                        alt="" />
+                                </div>
+
+                                <div class="text-container">
+                                    <h6>Title 03</h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="button-main">
+                    <a href=""> <button><span>ข่าวอื่นๆ</span></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ภาพถ่าย -->
+    <div class="container">
+        <h1 class="newspetanque">ภาพกิจกรรม</h1>
+        <div class="row row-cols-auto row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card shadow">
+                    <img src="./img/pic/01.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">อบรมผู้ฝึกสอนเปตองขั้นพื้นฐาน รุ่นที่ 4 และ 5 </h5>
+                        <p class="card-text">การอบรมผู้ฝึกสอนเปตอง ขั้นพื้นฐาน รุ่นที่ 4 วันที่ 4 -7 ธ.ค.64
+                            จังหวัดกำแพงเพชร
+                            -รุ่นที่ 5 ..วันที่ 9 - 12 ธ.ค.64 จังหวัดเชียงราย</p>
+                        <div class="card text-right">
+                            <a href="#" class="btn btn-outline-dark">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <img src="./img/pic/01.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">อบรมผู้ฝึกสอนเปตองขั้นพื้นฐาน รุ่นที่ 4 และ 5 </h5>
+                        <p class="card-text">การอบรมผู้ฝึกสอนเปตอง ขั้นพื้นฐาน รุ่นที่ 4 วันที่ 4 -7 ธ.ค.64
+                            จังหวัดกำแพงเพชร
+                            -รุ่นที่ 5 ..วันที่ 9 - 12 ธ.ค.64 จังหวัดเชียงราย</p>
+                        <div class="card text-right">
+                            <a href="#" class="btn btn-outline-dark">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <img src="./img/pic/01.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                    <div class="card-body">
+                        <h5 class="card-title">อบรมผู้ฝึกสอนเปตองขั้นพื้นฐาน รุ่นที่ 4 และ 5 </h5>
+                        <p class="card-text">การอบรมผู้ฝึกสอนเปตอง ขั้นพื้นฐาน รุ่นที่ 4 วันที่ 4 -7 ธ.ค.64
+                            จังหวัดกำแพงเพชร
+                            -รุ่นที่ 5 ..วันที่ 9 - 12 ธ.ค.64 จังหวัดเชียงราย</p>
+                        <div class="card text-right">
+                            <a href="#" class="btn btn-outline-dark">อ่านเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-outline-dark me-md-2 mt-3 mb-3" type="button">รูปภาพเพิ่มเติม</button>
+        </div>
+    </div>
+
+
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="sponsorfooter">
+            <!-- Section: Social media -->
+            <h3 class="sponsortext ">สนับสนุนโดย</h3>
+            <section class=" d-flex justify-content-center">
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <div class="sponsor-1">
+                            <img src="./img/Sponsor/FBT.png" alt="FBT" style="width: 120px;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <div class="sponsor-2">
+                            <img src="./img/Sponsor/marathon.png" alt="Marathon" style="width: 120px;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <div class="sponsor-3">
+                            <img src="./img/Sponsor/Egat.png" alt="Egat" style="width: 120px;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <div class="sponsor-4">
+                            <img src="./img/Sponsor/SAT.png" alt="SAT" style="width: 120px;">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="bannerfooter">
+            © 2022 Copyright:
+            <a>Ton Thammarat</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+</body>
+
+
+</html>
