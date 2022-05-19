@@ -16,9 +16,9 @@ b {
 
 /* แถบบาร์บน */
  .navbar-top{
-z-index: 1;
+z-index: 999;
 max-width: 100%;
-border-top: #9d0000 solid 15px;
+border-top: #9d0000 solid 10px;
 box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 
@@ -112,13 +112,23 @@ margin: 0 15px;
 }
 
 /* หัวข้อขข่าวกีฬาเปตอง */
-.newspetanque {
-    margin-top: 5px;
+#cards_landscape_wrap-2 .news {
+  text-align: start;
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  left: -25px;
+  top: -30px;
+
+}
+#cards_landscape_wrap-2 .news h4{
+    padding: 10px;
     color: #000000;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: start;
-    position: absolute;
+    display: inline-block;
 }
 /* ส่วนท้าย */
 .bannerfooter {
@@ -142,11 +152,64 @@ margin: 0 15px;
   
 }
 /* ปุ่มสมัครชมรม */
-.register{
+.register a{
+  
     text-align: end;
-    padding-left: 20px;
-    
+    border: #9d0000 solid 2px;
+    color: #9d0000;    
+    position:relative;
+   overflow:hidden;
+    font-weight: bold;
+    border-radius:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition-duration: 1s;    
 }
+.register a:hover{
+  text-align: end;
+  border: #9d0000 solid 2px;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+  font-weight: bold;
+  border-radius:0px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+  transition-duration: 0.1s;
+}
+.register a span{
+  z-index: 555;
+  font-weight: 500;
+  font-size: 16px;
+}
+.register a:hover::after{
+  position:absolute;
+    content:'';
+    border-radius:1px;
+    background-color:#9d0000;    
+    height:50px;
+    width:100px;
+    top:-12px;
+    left:-13px;
+}
+.register a::after{ 
+  position:absolute;
+  content:'';
+  border-radius:50% 50% ;
+  background-color:#9d0000;
+  height:50px;
+  width:50px;
+  top:100px;
+  left:75px    ;
+  transition:ease-in 0.5s ;
+  transform: scale(3);
+  transition-duration: 0.5s ;
+}
+/* จบ ปุ่มสมัครชมรม */
 
 /* สปอนเซอร์ 1 */
 .sponsor-1 {
@@ -285,35 +348,41 @@ margin: 0 15px;
   /*----  Main Style  ----*/
 #cards_landscape_wrap-2{
     text-align: center;
+    margin-top: 2rem;
+    position: relative;
   }
   #cards_landscape_wrap-2 .container{
-    padding-top: 50px; 
-    padding-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    position: relative;
   }
   #cards_landscape_wrap-2 a{
     text-decoration: none;
     outline: none;
-   
   }
   #cards_landscape_wrap-2 .card-flyer {
     border-radius: 0px;
-    height: 100%;
-   
+    position: relative;
+   /*  height: 100%;   */
+    
+    
+  }
+  #cards_landscape_wrap-2 .card-flyer-main {
+    border-radius: 0px;
+    position: relative;
+    /* height: 100%;  */
+    
+     
   }
   #cards_landscape_wrap-2 .card-flyer .image-box{
     background: #ffffff;
-    overflow: hidden;
-   /*  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
-    border-radius: 5px; */
-    
+    overflow: hidden;   
   }
-
-  #cards_landscape_wrap-2 .card-flyer .image-box-main{
+  
+  #cards_landscape_wrap-2 .card-flyer-main .image-box-main{
     background: #ffffff;
-    overflow: hidden;
-   /*  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
-    border-radius: 5px; */
-    
+    overflow: hidden;    
   }
   #cards_landscape_wrap-2 .card-flyer .image-box img{
     transition:all .9s ease; 
@@ -326,7 +395,7 @@ margin: 0 15px;
     padding: 0;
   }
 
-  #cards_landscape_wrap-2 .card-flyer .image-box-main img{
+  #cards_landscape_wrap-2 .card-flyer-main .image-box-main img{
     transition:all .9s ease; 
     -moz-transition:all .9s ease; 
     -o-transition:all .9s ease;
@@ -343,7 +412,7 @@ margin: 0 15px;
     transform:scale(1.15);
   }
 
-  #cards_landscape_wrap-2 .card-flyer:hover .image-box-main img{
+  #cards_landscape_wrap-2 .card-flyer-main:hover .image-box-main img{
     opacity: 0.7;
     -webkit-transform:scale(1.15);
     -moz-transform:scale(1.15);
@@ -352,22 +421,29 @@ margin: 0 15px;
     transform:scale(1.15);
   }
   #cards_landscape_wrap-2 .card-flyer .text-box{
-    text-align: center;
+    text-align: start;
+
+  }
+  #cards_landscape_wrap-2 .card-flyer-main .text-box-main{
+    text-align: start;
+    
   }
   #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
-    padding: 30px 18px;
-
-  }
-
-  #cards_landscape_wrap-2 .card-flyer .text-box .text-container-main{
     padding: 10px 10px;
-    height: 100%;
-    
     
   }
+
+  #cards_landscape_wrap-2 .card-flyer-main .text-box-main .text-container-main{
+       padding: 10px 10px;
+  
+  
+  }
+
+  
+    
 
   #cards_landscape_wrap-2 .card-flyer{
-    background: #FFFFFF;
+    background: #fff;
     border: #9d0000 solid 3px;
     margin-top: 50px;
     -webkit-transition: all 0.2s ease-in;
@@ -376,11 +452,28 @@ margin: 0 15px;
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+    max-height: max-content;
+    
   }
+
+  #cards_landscape_wrap-2 .card-flyer-main{
+    background: #ffffff;
+    border: #9d0000 solid 3px;
+    margin-top: 50px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+    max-height: max-content;
+   
+   
+  }
+
   #cards_landscape_wrap-2 .card-flyer:hover{
     background: #fff;
-/*     box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
- */    -webkit-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -ms-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -394,6 +487,22 @@ margin: 0 15px;
     font-size: 14px;
     letter-spacing: 1px;
     color: #000000;
+  
+  }
+  #cards_landscape_wrap-2 .card-flyer-main .text-box-main p{
+   /*  margin-top: 10px;
+    margin-bottom: 0px; */
+    padding-bottom: 0px; 
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: 400;
+    margin: 1rem 0 0;
+    line-height: 1.38;
+   
+   
+   
+    
   }
 
 
@@ -408,10 +517,10 @@ margin: 0 15px;
     color: #9d0000;
     text-align: start;
   }
-  #cards_landscape_wrap-2 .card-flyer .text-box-main h6{
-    margin-top: 10px;
-    margin-bottom: 3px; 
-    margin-left: 10px;
+  #cards_landscape_wrap-2 .card-flyer-main .text-box-main h6{
+    margin-top: 0px;
+    margin-bottom: 4px; 
+    margin-left: 0px;
     font-size: 28px;
     font-weight: 800;
     text-transform: uppercase;
@@ -420,11 +529,39 @@ margin: 0 15px;
     color: #9d0000;
     text-align: start;
   }
+  .description{
+    margin:1rem 0 0;
+    font-weight:400;
+    font-style:normal;
+    letter-spacing:normal;
+    font-size:1rem;
+    line-height:1.38;
+    color:#000;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    position:relative;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -webkit-line-clamp:5
+  } 
+  
+ 
+
+  /* วันที่ล่างกล่อง */
+.card-footer{
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  color: #767676;
+  text-align: start;
+  border: none;
+  background: none;
+  margin-top: 0;
+}
 
 /* ปุ่มกด */
 .button-main{
     height: 200px;
-    
     display:flex;
     justify-content:center;
     align-items:center;
@@ -438,30 +575,20 @@ margin: 0 15px;
     position:relative;
     overflow:hidden;
     color:#9d0000;
-    font-size:18px;
+    font-size:14px;
     font-weight: bold;
     border-radius:0px;
     display:flex;
     justify-content:center;
     align-items:center;
     cursor:pointer;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
+    letter-spacing: 1px;
 }
-.button-main button:hover{
-    height:50px;
-    width:350px;
-    background-color:#ffF;
-    border:3px solid #9d0000;
-    position:relative;
-    overflow:hidden;
+.button-main button:hover{   
     color:#fff;
-    font-size:18px;
-    font-weight: bold;
-    border-radius:0px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    cursor:pointer;
+    transition-duration: 0.5s;
+
 }
 
 .button-main button span{
@@ -511,5 +638,49 @@ border-radius: 100%;
 
 .carousel{
     margin-top: 70px;
+}
+/* กล่องเล็กๆมุมบนรูปภาพ*/
+.box-type{
+  position: absolute;
+  background-color: #9d0000;
+  color: #fff;  
+  padding: 5px 15px;
+  font-size: 12px;  
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+}
+/* จบกล่องเล็กๆมุมบนรูปภาพ*/
+
+.news-row{
+  position: absolute;
+  top: 400px;
+  left: 12px;  
+}
+#cards_landscape_wrap-2 .news-row .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: 'Prompt', sans-serif;
+  letter-spacing: 1px;
+  color: #9d0000;
+  text-align: center;
+  padding: 0px;
+}
+#cards_landscape_wrap-2 .news-row .card-flyer .text-box .text-container{
+  margin: 0;
+  padding: 5px;
+}
+.news-row .card-footer{
+  font-size: 14px;
+  font-weight: 300;
+  color: #767676;
+  border: none;
+  background: none;
+  margin-top: 0;
+  padding:0 0 5px;
+  justify-content: center;  
 }
 
